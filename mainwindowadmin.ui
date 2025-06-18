@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowAdmin</class>
+ <widget class="QMainWindow" name="MainWindowAdmin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>HSE Burges</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #f0efed;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>60</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #0b3b79;</string>
+    </property>
+    <property name="text">
+     <string>МЕНЮ</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="categoriesContainer" native="true">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>170</y>
+      <width>451</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0px;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtCat">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>571</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    border: 1px solid rgb(250,150,4);
+    border-radius: 8px;
+ background-color: rgb(238,240,239);
+    color: black;
+    font-size: 14px;
+}
+
+QLineEdit:focus {
+    border: 2px solid darkred;
+    background-color: #f9f9f9;
+}
+
+QLineEdit::placeholder {
+    color: #888888;
+}</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAddCat">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>10</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(250,150,4);
+color: white;
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string>Добавить категорию</string>
+    </property>
+   </widget>
+   <zorder>categoriesContainer</zorder>
+   <zorder>label_3</zorder>
+   <zorder>txtCat</zorder>
+   <zorder>btnAddCat</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
